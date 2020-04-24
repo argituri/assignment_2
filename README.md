@@ -12,15 +12,13 @@ Rules
 * It should not matter if there are many pairs with the same difference between them e.g. [1,3,5]
 
 ## Classes
-"Main" class in src/main/java/
 
-* NumsBetween
 
-Contains the static method howManyBetween(int[])
+* Main class in src/main/java/NumsBetween.java
 
-"Test" class in src/test/java/
+Contains the static method howManyBetween(int[]) which is where the 'main answer' lies.
 
-* NumsBetweenTest
+* Test class in src/test/java/NumsBetweenTest
 
 Contains unit tests (Junit 5). First test makes sure the function works and returns an integer using a random int array, 
 the other tests expect a determined result for different arrays. 
@@ -37,9 +35,9 @@ to run tests with maven/Junit.
 
 To run the "main program" after compilation run (from project root):
 
-> java -cp target\classes NumsBetween <ARRAY>
+> java -cp target\classes NumsBetween (ARRAY)
 
-Where <Array> is your comma separated integer array in quotes for example:
+Where (Array) is your comma separated integer array in quotes for example:
 
 > java -cp target\classes NumsBetween "10,4,1"
 
