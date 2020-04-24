@@ -51,7 +51,7 @@ Where <Array> is your comma separated integer array in quotes for example:
  However same program logic could be applied for long/BigInteger, if you were to need this logic for bigger numbers.
  
  Also, some might argue that zero is the smallest amount that could fit between two numbers. 
- In that case simply remove the '&& Math.abs(arr[i] - arr[j]) > 1  from NumsBetween at:
+ In that case simply remove the part "&& Math.abs(arr[i] - arr[j]) > 1"  from NumsBetween at:
  > if (Math.abs(arr[i] - arr[j]) < difference && Math.abs(arr[i] - arr[j]) > 1){ 
 
 Also note that this breaks the unit tests.
